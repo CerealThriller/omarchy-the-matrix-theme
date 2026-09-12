@@ -34,6 +34,9 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
   Lock Screen Explorer plugin, a live animated version is also available —
   see [Live Lock Screen](#live-lock-screen-lock-screen-explorer) below.
 - **Icons** (`icons.theme`)
+- **Screensaver**: a `THE MATRIX` ASCII banner for Omarchy's stock
+  screensaver (terminal text effects over ASCII art) — see
+  [Screensaver](#screensaver) below.
 
 ## Fan / Motherboard RGB (OpenRGB)
 
@@ -76,6 +79,28 @@ omarchy-shell lock rescanDesigns
 omarchy-shell lock setDesign my-thematrixterminal
 ```
 
+## Screensaver
+
+Omarchy's built-in screensaver runs animated terminal text effects
+([`ttfx`](https://github.com/ChrisBuilds/terminaltexteffects)) over an ASCII
+art banner at `~/.config/omarchy/branding/screensaver.txt`. Swap in this
+theme's banner to get a `THE MATRIX` logo dissolving/rebuilding in random
+effects instead of the stock Omarchy logo:
+
+```bash
+curl -o ~/.config/omarchy/branding/screensaver.txt \
+  https://raw.githubusercontent.com/CerealThriller/omarchy-the-matrix-theme/main/extras/screensaver/screensaver.txt
+```
+
+It takes effect the next time the screensaver launches — no restart needed.
+Idle timing (`idle.screensaver`, `idle.lock`) lives in
+`~/.config/omarchy/shell.json`, in seconds since idle began.
+
+If you have the [Screensaver Panel](https://github.com/brianirish/omarchy-screensaver-panel)
+plugin (`brianirish.screensaver`) installed, its bar panel gives you a GUI
+for idle timing, effect selection, and editing this artwork instead of
+hand-editing files.
+
 ## Credits
 
 - **Concept**: a fan homage to [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)
@@ -93,6 +118,9 @@ omarchy-shell lock setDesign my-thematrixterminal
   images were used as source pixels, only as a compositional/lighting
   reference in one case (credited in that background's own history, not
   reused directly).
+- **Screensaver banner** (`extras/screensaver/screensaver.txt`): plain text
+  art, generated with the [FIGlet](http://www.figlet.org/) "ANSI Shadow"
+  font.
 
 ## License
 
