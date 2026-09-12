@@ -27,7 +27,8 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
   3. **Hallway** — three figures standing in a lit doorway at the end of a
      corridor, built entirely out of code density/brightness rather than a
      photo (no reference pixels are reused, only its composition/luminance)
-- **Lock screen** (`unlock.png`)
+- **Lock screen** (`unlock.png`) — a retro CRT terminal boot/login prompt,
+  scanlines and phosphor glow included
 - **Icons** (`icons.theme`)
 
 ## Fan / Motherboard RGB (OpenRGB)
