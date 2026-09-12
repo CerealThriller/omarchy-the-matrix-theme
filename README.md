@@ -24,10 +24,9 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
 - **Backgrounds**:
   1. **Digital rain** — the classic falling-code look
   2. **Cityscape** — a green-on-black skyline
-  3. **Bullet time** — a POV hallway shot built entirely out of code density:
-     converging floor/wall lines, a frozen bullet with a rippling shockwave,
-     a raised hand reaching up from the bottom, and three agents waiting at
-     the far end if you look closely
+  3. **Hallway** — three figures standing in a lit doorway at the end of a
+     corridor, built entirely out of code density/brightness rather than a
+     photo (no reference pixels are reused, only its composition/luminance)
 - **Lock screen** (`unlock.png`)
 - **Icons** (`icons.theme`)
 
