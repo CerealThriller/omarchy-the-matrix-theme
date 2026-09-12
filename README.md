@@ -55,6 +55,22 @@ every OpenRGB-detected device on every theme change. Note: some ARGB LEDs
 render pure green (`00FF00`) with a slight cyan cast — that's the hardware,
 not the theme.
 
+## Live Lock Screen (Lock Screen Explorer)
+
+If you have the [Lock Screen Explorer](https://github.com/sirjul1337/lock-explorer)
+plugin installed, `unlock.png` isn't used — instead you can drop in a live,
+animated version: real falling code behind a CRT terminal card (boot text,
+blinking cursor, your username, password field), all colored from this
+theme's palette automatically.
+
+```bash
+mkdir -p ~/.config/omarchy/lock-designs
+curl -o ~/.config/omarchy/lock-designs/TheMatrixTerminal.qml \
+  https://raw.githubusercontent.com/CerealThriller/omarchy-the-matrix-theme/main/extras/lock-designs/TheMatrixTerminal.qml
+omarchy-shell lock rescanDesigns
+omarchy-shell lock setDesign my-thematrixterminal
+```
+
 ## License
 
 MIT
