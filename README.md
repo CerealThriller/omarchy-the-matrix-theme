@@ -27,8 +27,12 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
   3. **Hallway** — three figures standing in a lit doorway at the end of a
      corridor, built entirely out of code density/brightness rather than a
      photo (no reference pixels are reused, only its composition/luminance)
-- **Lock screen** (`unlock.png`) — a retro CRT terminal boot/login prompt,
-  scanlines and phosphor glow included
+- **Lock screen**: the password card's colors (text, placeholder, border,
+  error state) come from `colors.toml` automatically, same as everything
+  else. `unlock.png` is the art shown above that card — a retro CRT terminal
+  boot/login prompt, scanlines and phosphor glow included. If you use the
+  Lock Screen Explorer plugin, a live animated version is also available —
+  see [Live Lock Screen](#live-lock-screen-lock-screen-explorer) below.
 - **Icons** (`icons.theme`)
 
 ## Fan / Motherboard RGB (OpenRGB)
@@ -57,11 +61,12 @@ not the theme.
 
 ## Live Lock Screen (Lock Screen Explorer)
 
-If you have the [Lock Screen Explorer](https://github.com/sirjul1337/lock-explorer)
+If you have the [Lock Screen Explorer](https://github.com/SirJul1337/omarchy-lock-explorer)
 plugin installed, `unlock.png` isn't used — instead you can drop in a live,
 animated version: real falling code behind a CRT terminal card (boot text,
 blinking cursor, your username, password field), all colored from this
-theme's palette automatically.
+theme's palette automatically. The falling-code canvas itself is adapted
+from that plugin's own built-in "Rain" design (see Credits).
 
 ```bash
 mkdir -p ~/.config/omarchy/lock-designs
@@ -71,6 +76,29 @@ omarchy-shell lock rescanDesigns
 omarchy-shell lock setDesign my-thematrixterminal
 ```
 
+## Credits
+
+- **Concept**: a fan homage to [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)
+  (1999, Warner Bros.). Not affiliated with or endorsed by Warner Bros.,
+  and no claim is made over the film's trademarks, characters, or imagery —
+  this theme only reuses a handful of short, iconic lines of dialogue and a
+  generic visual style (green falling code on black).
+- **Live terminal lock design** (`extras/lock-designs/TheMatrixTerminal.qml`):
+  the falling-code canvas is adapted from the "Rain" design built into
+  [Lock Screen Explorer](https://github.com/SirJul1337/omarchy-lock-explorer)
+  by SirJul1337 (MIT licensed). The CRT terminal card built on top of it is
+  original to this theme.
+- **Backgrounds and unlock art**: generated with AI assistance (Claude /
+  Claude Code) from scratch — no photos, film frames, or other artists'
+  images were used as source pixels, only as a compositional/lighting
+  reference in one case (credited in that background's own history, not
+  reused directly).
+
 ## License
 
-MIT
+The configuration and code in this repo (`colors.toml`, the OpenRGB hook,
+this README, and the original parts of the lock design) are MIT licensed —
+see [Credits](#credits) above for the one adapted file. Beyond that, no
+strong ownership claim is made over the AI-generated images themselves or
+over anything evoking The Matrix as a concept; use, remix, and redistribute
+this theme freely.
