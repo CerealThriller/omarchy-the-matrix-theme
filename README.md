@@ -21,12 +21,11 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
 
 - **Palette** (`colors.toml`) — terminals, Hyprland, the Omarchy shell, btop,
   Neovim, VS Code, and the rest are generated from it.
-- **Backgrounds**:
-  1. **Digital rain** — the classic falling-code look
-  2. **Cityscape** — a green-on-black skyline
-  3. **Hallway** — three figures standing in a lit doorway at the end of a
-     corridor, built entirely out of code density/brightness rather than a
-     photo (no reference pixels are reused, only its composition/luminance)
+- **Backgrounds** — 16 total, cycle with `omarchy theme bg next`. The default
+  is an "OMARCHY" neon wordmark; the rest range across an empty neon room, a
+  digital portal ring, Earth from orbit, city skylines, a temple doorway, a
+  rainy street, a samurai helmet, and a bullet-time-style hallway. Most carry
+  short motivational captions baked into the image itself.
 - **Lock screen**: the password card's colors (text, placeholder, border,
   error state) come from `colors.toml` automatically, same as everything
   else. `unlock.png` is the art shown above that card — a retro CRT terminal
@@ -113,11 +112,10 @@ hand-editing files.
   [Lock Screen Explorer](https://github.com/SirJul1337/omarchy-lock-explorer)
   by SirJul1337 (MIT licensed). The CRT terminal card built on top of it is
   original to this theme.
-- **Backgrounds and unlock art**: generated with AI assistance (Claude /
-  Claude Code) from scratch — no photos, film frames, or other artists'
-  images were used as source pixels, only as a compositional/lighting
-  reference in one case (credited in that background's own history, not
-  reused directly).
+- **Unlock art**: generated with AI assistance (Claude / Claude Code) from
+  scratch — no photos, film frames, or other artists' images were used as
+  source pixels.
+- **Backgrounds**: generated with ChatGPT.
 - **Screensaver banner** (`extras/screensaver/screensaver.txt`): plain text
   art, generated with the [FIGlet](http://www.figlet.org/) "ANSI Shadow"
   font.
