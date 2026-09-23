@@ -21,7 +21,7 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
 
 - **Palette** (`colors.toml`) — terminals, Hyprland, the Omarchy shell, btop,
   Neovim, VS Code, and the rest are generated from it.
-- **Backgrounds** — 16 total, cycle with `omarchy theme bg next`. The default
+- **Backgrounds** — 15 total, cycle with `omarchy theme bg next`. The default
   is an "OMARCHY" neon wordmark; the rest range across an empty neon room, a
   digital portal ring, Earth from orbit, city skylines, a temple doorway, a
   rainy street, a samurai helmet, and a bullet-time-style hallway. Most carry
