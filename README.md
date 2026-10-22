@@ -30,8 +30,8 @@ Once installed, pick "TheMatrix" under _Style > Theme_.
   error state) come from `colors.toml` automatically, same as everything
   else. `unlock.png` is the art shown above that card — a retro CRT terminal
   boot/login prompt, scanlines and phosphor glow included. If you use the
-  Lock Screen Explorer plugin, a live animated version is also available —
-  see [Live Lock Screen](#live-lock-screen-lock-screen-explorer) below.
+  Lock Screen Explorer plugin, a live animated companion design is available
+  separately — see [Live Lock Screen](#live-lock-screen-lock-screen-explorer) below.
 - **Icons** (`icons.theme`)
 - **Screensaver**: a `THE MATRIX` ASCII banner for Omarchy's stock
   screensaver (terminal text effects over ASCII art) — see
@@ -64,19 +64,11 @@ not the theme.
 ## Live Lock Screen (Lock Screen Explorer)
 
 If you have the [Lock Screen Explorer](https://github.com/SirJul1337/omarchy-lock-explorer)
-plugin installed, `unlock.png` isn't used — instead you can drop in a live,
-animated version: real falling code behind a CRT terminal card (boot text,
-blinking cursor, your username, password field), all colored from this
-theme's palette automatically. The falling-code canvas itself is adapted
-from that plugin's own built-in "Rain" design (see Credits).
-
-```bash
-mkdir -p ~/.config/omarchy/lock-designs
-curl -o ~/.config/omarchy/lock-designs/TheMatrixTerminal.qml \
-  https://raw.githubusercontent.com/CerealThriller/omarchy-the-matrix-theme/main/extras/lock-designs/TheMatrixTerminal.qml
-omarchy-shell lock rescanDesigns
-omarchy-shell lock setDesign my-thematrixterminal
-```
+plugin installed, `unlock.png` isn't used — instead you can use a live,
+animated companion design: real falling code behind a CRT terminal card,
+colored from this theme's palette automatically. It lives in its own repo,
+with install instructions:
+[omarchy-thematrix-lock-screen](https://github.com/CerealThriller/omarchy-thematrix-lock-screen).
 
 ## Screensaver
 
@@ -107,11 +99,6 @@ hand-editing files.
   and no claim is made over the film's trademarks, characters, or imagery —
   this theme only reuses a handful of short, iconic lines of dialogue and a
   generic visual style (green falling code on black).
-- **Live terminal lock design** (`extras/lock-designs/TheMatrixTerminal.qml`):
-  the falling-code canvas is adapted from the "Rain" design built into
-  [Lock Screen Explorer](https://github.com/SirJul1337/omarchy-lock-explorer)
-  by SirJul1337 (MIT licensed). The CRT terminal card built on top of it is
-  original to this theme.
 - **Unlock art**: generated with AI assistance (Claude / Claude Code) from
   scratch — no photos, film frames, or other artists' images were used as
   source pixels.
@@ -122,9 +109,8 @@ hand-editing files.
 
 ## License
 
-The configuration and code in this repo (`colors.toml`, the OpenRGB hook,
-this README, and the original parts of the lock design) are MIT licensed —
-see [Credits](#credits) above for the one adapted file. Beyond that, no
+The configuration in this repo (`colors.toml`, the OpenRGB hook, and this
+README) is MIT licensed. Beyond that, no
 strong ownership claim is made over the AI-generated images themselves or
 over anything evoking The Matrix as a concept; use, remix, and redistribute
 this theme freely.
